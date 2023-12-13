@@ -1,0 +1,13 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}
+// {
+//     "python.formatting.provider": "autopep8",
+//     "python.formatting.autopep8Path": "autopep8",
+//     "editor.formatOnSave": true,
+//     "python.linting.pylintEnabled": true,
+//     "python.linting.pylintArgs": ["--max-line-length=120"]
+// }

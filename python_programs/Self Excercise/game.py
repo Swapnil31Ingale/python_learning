@@ -36,3 +36,29 @@ elif user_choice == 3 and comp_choice == 3:
 else:
     print("Invalid Choice")
     sys.exit
+    
+# import random
+
+# def check(comp, user):
+#   if comp ==user:
+#     return 0
+    
+#   if(comp == 0 and user ==1):
+#     return -1
+    
+#   if(comp == 1 and user ==2):
+#     return -1
+    
+#   if(comp == 2 and user == 0):
+#     return -1
+
+#   return 1
+    
+  
+# comp = random.randint(0, 2)
+# user = int(input("0 for Snake, 1 for water and 2 for Gun:\n"))
+
+# score = check(comp, user)
+
+# print("You: ", user)
+# print("Computer: ", comp)

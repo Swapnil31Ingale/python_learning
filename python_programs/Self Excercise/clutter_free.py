@@ -85,6 +85,26 @@ else:
 #     print("No PNG files found in the specified directory.")
 
 
+# import os
+
+# class First:
+#     def __init__(self):
+#         self.files = os.listdir()
+#         self.png_finder = [f for f in self.files if os.path.splitext(f)[1] == ".png"]
+
+#     def file_renamer(self):
+#         for index, file in enumerate(self.png_finder, start=1):
+#             os.rename(file, f"{index}.png")
+
+# if __name__ == "__main__":
+#     class_handler = First()
+#     class_handler.file_renamer()
+
+#     # Print the renamed files
+#     for index, file in enumerate(class_handler.png_finder):
+#         print(f'File ({file}) has been renamed to {index + 1}.png')
+
+
       
 
                 

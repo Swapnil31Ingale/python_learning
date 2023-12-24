@@ -13,6 +13,7 @@
 # object = Water()
 # object.drink_notification(f"REMINDER: It's to have water!!")
 
+###############################################################################
 import time
 from win10toast import ToastNotifier
 
@@ -38,6 +39,7 @@ if __name__ == "__main__":
     print("Water reminder started. Press 'Ctrl+C' to quit.")
     reminder.run_reminder()
 
+###############################################################################
 # from win10toast import ToastNotifier
 # import time
 # import datetime
@@ -73,6 +75,15 @@ if __name__ == "__main__":
 #         if user_input.lower() == 'q':
 #             reminder.stop_reminder()
 #             break
-        
+
+###############################################################################
+# import time
+# from plyer import notification
+
+# time_hr = int(input("Enter the hour you want to start: "))
+# while True:
+#     time.sleep(3600 * time_hr)
+#     notification.notify(title = "Water Reminder", message ="Please drink water", timeout = 5)
+
 
 

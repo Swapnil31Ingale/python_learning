@@ -3,7 +3,7 @@
 # Deposits and Withdraw. Make some deposit and withdraw
 # but withdraw amount cannot exceed the available balance.
 
-class Account:
+class Bank_Account:
     def __init__(self, account_holder, balance):
         self.available_balance = balance
         #self.balance = balance
@@ -28,7 +28,7 @@ class Account:
             #return self.available_balance
             print(f"{self.withdraw_amount} is withdrawn from {self.account_holder}'s account, total available balance is {self.available_balance}.")
 
-object = Account("Sam", 1000)
+object = Bank_Account("Sam", 1000)
 print(object)
 object.Deposit(100)
 object.Withdraw(1000)

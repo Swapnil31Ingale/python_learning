@@ -37,7 +37,27 @@
 # 0 ≤ M < 60
 # H and M are Integers
 
-angle = 0
-
 def getAngle(H, M):
-    return angle
+    # validate input
+    if H < 1 or H > 12 or M < 0 or M >= 60:
+        return -1  # invalid input
+    
+    # Calculate the angle formed by the hour hand with respect to 12:00
+    hour_angle = 0.5 * (60 * H + M)
+
+    # Calculate the angle formed by the minute hand with respect to 12:00
+    minute_angle = 6 * M
+
+    # Calculate the absolute difference between the two angles
+    angle = abs(hour_angle - minute_angle)
+
+    # Find the minimum angle (360 - angle) if it's greater than angle
+    angle = min(360 - angle, angle)
+
+    # Return the floor of the final result angle
+    return int(angle)
+
+# Example usage:
+print(getAngle(9, 0))   # Output: 90
+print(getAngle(3, 30))  # Output: 75
+
